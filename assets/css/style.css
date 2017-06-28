@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+
+.topNav{
+    background-color: #318FC2;
+    color: red;
+    height: 100px;
+}
