@@ -1,9 +1,90 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-.topNav{
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+}
+
+nav {
     background-color: #318FC2;
-    color: red;
-    height: 100px;
+    padding: 5px;
+    overflow: hidden;
+    line-height: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.leftNav {
+    margin-left: 150px;
+    float: left;
+}
+
+.navChildren {
+    float: left;
+}
+
+.favicon {
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+
+.navRight {
+    float: right;
+    margin: 0px;
+}
+
+.lineList{
+    list-style: none;
+    display: inline;
+}
+
+#mainSection {
+    clear: both;
+    margin: 75px;
+    
+    border: solid 2px black;
+    overflow: hidden;
+}
+
+#mainLeft {
+    float: left;
+    width: 80%;
+    padding: 10px;
+    border: solid 1px black;
+}
+
+#mainRight {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    border: solid 1px black;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    background-color: #640360;
+    color: white;
+}
+
+footer {
+    clear: both;
+    position: fixed;
+    background-color: lightgray;
+    bottom: 0px;
+    width: 100%;
 }
