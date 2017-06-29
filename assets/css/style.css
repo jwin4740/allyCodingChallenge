@@ -67,23 +67,27 @@ a {
     border: solid 1px black;
 }
 
+.whyAwesome{
+    margin: 5px;
+}
+
 .mobileInfo {
     position: relative;
     background-color: #BBD8C4;
-    padding: 5px;
+    padding: 8px;
     overflow: hidden;
 }
 
 .containMobile {
     float: left;
-    width: 70%;
+    width: 80%;
 }
 
 .mobileImage {
     float: right;
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 20px;
+    right: 50px;
     z-index: 99;
 }
 
@@ -113,6 +117,13 @@ table {
     border-collapse: collapse;
 }
 
+.mobileFloat{
+    margin: 3px;
+}
+
+.mobileHead{
+    color: #640360;;
+}
 .tLabel {
     font-size: 10px;
     padding: 5px;
