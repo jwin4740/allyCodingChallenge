@@ -6,7 +6,7 @@
 
 
     <title>Urbank</title>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -92,31 +92,38 @@
                             <thead>
                                 <tr>
                                     <th></th>
-                                    <th>Annual Percentage Yield</th>
-                                    <th>Est. Earnings for 1 Year*</th>
+                                    <th class='tLabel'>Annual Percentage Yield</th>
+                                    <th class='tLabel'>Est. Earnings for 1 Year*</th>
                                 </tr>
                             </thead>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td class='tLabel'> *Based on $50,000 deposit</td>
+                                </tr>
+                            </tfoot>
                             <tbody>
-                                <tr>
+                                <!--<tr class='tRow'>
                                     <td class='bankName'>Bank Name</td>
                                     <td class='apy'>15</td>
                                     <td class='earnings'>15</td>
                                 </tr>
-                                <tr>
+                                <tr class='tRow'>
                                     <td class='bankName'>Bank Name</td>
                                     <td class='apy'>15</td>
                                     <td class='earnings'>15</td>
                                 </tr>
-                                <tr>
+                                <tr class='tRow'>
                                     <td class='bankName'>Bank Name</td>
                                     <td class='apy'>15</td>
                                     <td class='earnings'>15</td>
                                 </tr>
-                                <tr>
+                                <tr class='tRow'>
                                     <td class='bankName'>Bank Name</td>
                                     <td class='apy'>15</td>
                                     <td class='earnings'>15</td>
-                                </tr>
+                                </tr>-->
                             </tbody>
                         </table>
 
@@ -150,6 +157,9 @@
             </div>
         </footer>
     </div>
+   
+    <script src='assets/js/app.js'>
+    </script>
 </body>
 
 </html>

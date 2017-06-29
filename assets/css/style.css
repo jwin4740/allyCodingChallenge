@@ -108,25 +108,47 @@ footer {
     width: 100%;
 }
 
-table{
+table {
     width: 100%;
+    border-collapse: collapse;
 }
 
-th{
+.tLabel {
     font-size: 10px;
+    padding: 5px;
     text-align: right;
+    font-weight: normal;
 }
 
-.bankName{
+.tRow:nth-child(even) {
+    background-color: #DEEBE1;  
+}
+
+.tRow:nth-child(odd) {
+    background-color: #EEF5EE;
+}
+
+.tRow:first-child{
+    font-weight: bolder;
+}
+.tRow {
+    line-height: 35px;
+}
+
+.bankName {
     width: 40%;
 }
 
-.apy{
+.apy {
     width: 20%;
     text-align: right;
 }
 
-.earnings{
+.earnings {
     width: 20%;
     text-align: right;
+}
+
+td{
+    padding: 5px;
 }
