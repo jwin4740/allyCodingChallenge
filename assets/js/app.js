@@ -54,7 +54,31 @@ for (var i = 0; i < dataLength; i++) {
 
 
 
-$("#news").on("click", function () {
-    console.log("hello");
+$(".tabButton").on("click", function () {
+    var clickedButton = this.id;
+
+    if (clickedButton === "newsButton") {
+        console.log("news");
+
+        $("#newsButton").removeClass("passiveTab");
+        $("#newsButton").addClass("activeTab");
+        $("#archiveButton").addClass("passiveTab");
+
+        $("#news").removeClass("passiveDiv");
+        $("#news").addClass("activeDiv");
+        $("#archive").addClass("passiveDiv");
+
+    }
+
+    if (clickedButton === "archiveButton") {
+        console.log("archive");
+        $("#archiveButton").removeClass("passiveTab");
+        $("#archiveButton").addClass("activeTab");
+        $("#newsButton").addClass("passiveTab");
+
+        $("#archive").removeClass("passiveDiv");
+        $("#archive").addClass("activeDiv");
+        $("#news").addClass("passiveDiv");
+    }
 
 });

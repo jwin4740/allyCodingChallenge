@@ -115,11 +115,13 @@ a {
     padding: 10px;
     margin: 0px;
     cursor: pointer;
+     
 }
 
 .passiveTab {
     float: left;
     position: relative;
+    bottom: -5px;
     color: blue;
     background-color: #DEEBE1;
     border: none;
@@ -135,18 +137,21 @@ a {
     z-index: 50;
     background-color: #F5F5F5;
     padding: 10px;
-
+   
 }
-.passiveDiv{
+
+.passiveDiv {
     display: none;
 }
+
 p {
     margin: 0px;
 }
 
-button:focus{
+button:focus {
     outline: 0;
 }
+
 .tabsHeader {
     margin: 0px 0px 2px 0px;
 }
