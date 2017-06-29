@@ -28,7 +28,7 @@ a {
 }
 
 .leftNav {
-    margin-left: 150px;
+    margin-left: 100px;
     float: left;
 }
 
@@ -44,10 +44,10 @@ a {
 
 .navRight {
     float: right;
-    margin: 0px;
+    margin: 0px 100px 0px 0px;
 }
 
-.lineList{
+.lineList {
     list-style: none;
     display: inline;
 }
@@ -55,16 +55,36 @@ a {
 #mainSection {
     clear: both;
     margin: 75px;
-    
     border: solid 2px black;
     overflow: hidden;
 }
 
-#mainLeft {
+.mainLeft {
     float: left;
-    width: 80%;
+    position: relative;
+    width: 70%;
     padding: 10px;
     border: solid 1px black;
+}
+
+.mobileInfo {
+    position: relative;
+    background-color: #BBD8C4;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.containMobile {
+    float: left;
+    width: 70%;
+}
+
+.mobileImage {
+    float: right;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 99;
 }
 
 #mainRight {
@@ -74,7 +94,7 @@ a {
     border: solid 1px black;
 }
 
-button{
+button {
     width: 100%;
     height: 40px;
     background-color: #640360;
@@ -83,8 +103,30 @@ button{
 
 footer {
     clear: both;
-    position: fixed;
     background-color: lightgray;
-    bottom: 0px;
+    overflow: hidden;
     width: 100%;
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    font-size: 10px;
+    text-align: right;
+}
+
+.bankName{
+    width: 40%;
+}
+
+.apy{
+    width: 20%;
+    text-align: right;
+}
+
+.earnings{
+    width: 20%;
+    text-align: right;
 }
