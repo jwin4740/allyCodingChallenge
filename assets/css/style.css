@@ -12,6 +12,18 @@ body {
     height: 100%;
 }
 
+.modal {
+    background-color: white;
+    border-radius: 2px;
+    height: 225px;
+    width: 400px;
+    position: fixed;
+    z-index: 9999;
+    top: 15%;
+    border: solid 1px black;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+}
+
 .container {
     height: 100%;
 }
@@ -45,14 +57,13 @@ a {
 .navRight {
     float: right;
     margin: 0px;
-
 }
 
-.aTopNav{
+.aTopNav {
     color: white;
 }
 
-.aBottomNav{
+.aBottomNav {
     color: blue;
 }
 
@@ -117,6 +128,7 @@ a {
     background-color: #640360;
     color: white;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .activeTab {
@@ -230,4 +242,33 @@ footer {
     width: 100%;
     color: blue;
     padding: 0px 155px 20px 155px;
+}
+
+#closeModal{
+    float: right;
+    cursor: pointer;
+}
+
+#submitLogin{
+    background-color: purple;
+    color: white;
+    float: right;
+    border: none;
+    padding: 5px;
+    width: 100px;
+ 
+    
+}
+
+input{
+    float: right;
+    width: 80%;
+}
+
+div.form-group{
+    margin-bottom: 20px;
+}
+
+label{
+    clear: both;
 }

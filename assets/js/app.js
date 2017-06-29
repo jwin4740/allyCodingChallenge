@@ -82,3 +82,20 @@ $(".tabButton").on("click", function () {
     }
 
 });
+
+
+$("#submitLogin").on("click", function () {
+    event.preventDefault();
+})
+
+
+
+
+var dialog = document.querySelector('dialog');
+$("#clickMe").on("click", function() {
+  dialog.show();
+});
+
+$("#closeModal").on("click", function() {
+  dialog.close();
+});
