@@ -67,7 +67,7 @@ a {
     border: solid 1px black;
 }
 
-.whyAwesome{
+.whyAwesome {
     margin: 5px;
 }
 
@@ -98,18 +98,57 @@ a {
     border: solid 1px black;
 }
 
-button {
+#clickMe {
     width: 100%;
     height: 40px;
     background-color: #640360;
     color: white;
+    margin-bottom: 20px;
 }
 
-footer {
+.activeTab {
+    float: left;
+    position: relative;
+    z-index: 50;
+    background-color: #F5F5F5;
+    border: none;
+    padding: 10px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.passiveTab {
+    float: left;
+    position: relative;
+    color: blue;
+    background-color: #DEEBE1;
+    border: none;
+    padding: 10px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.activeDiv {
     clear: both;
-    background-color: lightgray;
-    overflow: hidden;
     width: 100%;
+    position: relative;
+    z-index: 50;
+    background-color: #F5F5F5;
+    padding: 10px;
+
+}
+.passiveDiv{
+    display: none;
+}
+p {
+    margin: 0px;
+}
+
+button:focus{
+    outline: 0;
+}
+.tabsHeader {
+    margin: 0px 0px 2px 0px;
 }
 
 table {
@@ -117,13 +156,14 @@ table {
     border-collapse: collapse;
 }
 
-.mobileFloat{
+.mobileFloat {
     margin: 3px;
 }
 
-.mobileHead{
-    color: #640360;;
+.mobileHead {
+    color: #640360;
 }
+
 .tLabel {
     font-size: 10px;
     padding: 5px;
@@ -132,16 +172,17 @@ table {
 }
 
 .tRow:nth-child(even) {
-    background-color: #DEEBE1;  
+    background-color: #DEEBE1;
 }
 
 .tRow:nth-child(odd) {
     background-color: #EEF5EE;
 }
 
-.tRow:first-child{
+.tRow:first-child {
     font-weight: bolder;
 }
+
 .tRow {
     line-height: 35px;
 }
@@ -160,6 +201,15 @@ table {
     text-align: right;
 }
 
-td{
+td {
     padding: 5px;
+}
+
+footer {
+    clear: both;
+    background-color: lightgray;
+    line-height: 60px;
+    vertical-align: text-top;
+    overflow: hidden;
+    width: 100%;
 }

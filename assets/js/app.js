@@ -1,5 +1,3 @@
-
-
 var jsonData = [{
         "name": "Big Guy Financial",
         "apy": 0.75,
@@ -53,3 +51,10 @@ for (var i = 0; i < dataLength; i++) {
 
     $("tbody").append(novoRow);
 }
+
+
+
+$("#news").on("click", function () {
+    console.log("hello");
+
+});

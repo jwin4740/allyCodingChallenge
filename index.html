@@ -81,11 +81,41 @@
                 </div>
                 <div id='mainRight'>
                     <button id="clickMe" class='myButton'> LOGIN </button>
+
+                    <div class="w3-container">
+                        <div class="w3-bar w3-black">
+                            <button id='newsButton' class="activeTab">News</button>
+                            <button id='newsButton' class="passiveTab">Archive</button>
+                        </div>
+
+                        <div id="news" class="activeDiv">
+                            <h4 class='tabsHeader'>News</h4>
+                            <p>Paris is the capital of France.</p>
+                            <br>
+                            <h4 class='tabsHeader'>News</h4>
+                            <p>Paris is the capital of France.</p>
+                        </div>
+
+                        <div id="archive" class="w3-container w3-border city passiveDiv">
+                            <h4 class='tabsHeader'>This is the an Archive</h4>
+                            <h4 class='tabsHeader'>This is the an Archive</h4>
+                            <h4 class='tabsHeader'>This is the an Archive</h4>
+                            <h4 class='tabsHeader'>This is the an Archive</h4>
+
+                        </div>
+
+                        <div id="Tokyo" class="w3-container w3-border city" style="display:none">
+                            <h2>Tokyo</h2>
+                            <p>Tokyo is the capital of Japan.</p>
+                        </div>
+                    </div>
+
+
                 </div>
             </section>
             <section>
                 <div class='mainLeft'>
-                    <h2> Rates | <span> Check them out. </span> </h2>
+                    <h2> Rates | <span style='color: #494949'> Check them out. </span> </h2>
                     <div id='rateTable'>
 
                         <table>
@@ -117,7 +147,7 @@
             <div>
                 &copy; 2017 A.Ham
 
-                <ul style='float: right;'>
+                <ul style='float: right; margin: 0px;'>
                     <li class="lineList">
                         <a href="#">home</a>
                     </li>
