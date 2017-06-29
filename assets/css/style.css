@@ -18,7 +18,7 @@ body {
 
 nav {
     background-color: #318FC2;
-    padding: 5px;
+    padding: 5px 155px 5px 155px;
     overflow: hidden;
     line-height: 40px;
 }
@@ -28,7 +28,7 @@ a {
 }
 
 .leftNav {
-    margin-left: 100px;
+    margin: 0px;
     float: left;
 }
 
@@ -44,27 +44,41 @@ a {
 
 .navRight {
     float: right;
-    margin: 0px 100px 0px 0px;
+    margin: 0px;
+
+}
+
+.aTopNav{
+    color: white;
+}
+
+.aBottomNav{
+    color: blue;
 }
 
 .lineList {
     list-style: none;
     display: inline;
+    margin-left: 40px;
 }
 
 #mainSection {
     clear: both;
-    margin: 75px;
-    border: solid 2px black;
+    margin: 30px 150px 30px 150px;
     overflow: hidden;
 }
 
 .mainLeft {
     float: left;
     position: relative;
-    width: 70%;
+    width: 75%;
     padding: 10px;
-    border: solid 1px black;
+}
+
+#bestBank {
+    color: #640360;
+    font-size: 30px;
+    margin-top: 0px;
 }
 
 .whyAwesome {
@@ -93,9 +107,8 @@ a {
 
 #mainRight {
     float: left;
-    width: 20%;
+    width: 25%;
     padding: 10px;
-    border: solid 1px black;
 }
 
 #clickMe {
@@ -115,7 +128,6 @@ a {
     padding: 10px;
     margin: 0px;
     cursor: pointer;
-     
 }
 
 .passiveTab {
@@ -137,7 +149,6 @@ a {
     z-index: 50;
     background-color: #F5F5F5;
     padding: 10px;
-   
 }
 
 .passiveDiv {
@@ -213,8 +224,10 @@ td {
 footer {
     clear: both;
     background-color: lightgray;
-    line-height: 60px;
+    line-height: 40px;
     vertical-align: text-top;
     overflow: hidden;
     width: 100%;
+    color: blue;
+    padding: 0px 155px 20px 155px;
 }
