@@ -1,24 +1,24 @@
 var jsonData = [{
-        "name": "Big Guy Financial",
+        "name": "Laurens, Mulligan and Lafayette",
         "apy": 0.75,
         "earnings": 376.41
     }, {
-        "name": "URBank",
+        "name": "A. Hamilton Bank",
         "apy": 0.87,
         "earnings": 436.89
     },
     {
-        "name": "Dewey, Cheatam & Howe",
+        "name": "Angelica, Eliza and Peggy Investments",
         "apy": 0.01,
         "earnings": 5.00
     },
     {
-        "name": "First Onion",
+        "name": "Reynolds Inc.",
         "apy": 0.01,
         "earnings": 5.00
     },
     {
-        "name": "Bank of Everywhere",
+        "name": "Jefferson-Burr Holdings",
         "apy": 0.01,
         "earnings": 5.00
     }
@@ -84,18 +84,23 @@ $(".tabButton").on("click", function () {
 });
 
 
-$("#submitLogin").on("click", function () {
-    event.preventDefault();
-})
+
 
 
 
 
 var dialog = document.querySelector('dialog');
-$("#clickMe").on("click", function() {
-  dialog.show();
+$("#clickMe").on("click", function () {
+    dialog.show();
 });
 
-$("#closeModal").on("click", function() {
-  dialog.close();
+$("#submitLogin").on("click", function () {
+    event.preventDefault();
+    dialog.close();
+
 });
+
+$("#closeModal").on("click", function () {
+    dialog.close();
+});
+

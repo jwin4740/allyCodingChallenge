@@ -61,16 +61,26 @@ a {
 
 .aTopNav {
     color: white;
+    padding: 20px;
 }
 
 .aBottomNav {
     color: blue;
+    padding: 20px;
 }
 
 .lineList {
     list-style: none;
     display: inline;
-    margin-left: 40px;
+}
+
+.aTopNav:hover {
+    background-color: #006999;
+    font-weight: bolder;
+}
+
+.aBottomNav:hover {
+    font-weight: bolder;
 }
 
 #mainSection {
@@ -244,31 +254,30 @@ footer {
     padding: 0px 155px 20px 155px;
 }
 
-#closeModal{
+#closeModal {
     float: right;
     cursor: pointer;
 }
 
-#submitLogin{
+#submitLogin {
     background-color: purple;
     color: white;
     float: right;
     border: none;
     padding: 5px;
     width: 100px;
- 
-    
+    cursor: pointer;
 }
 
-input{
+input {
     float: right;
     width: 80%;
 }
 
-div.form-group{
+div.form-group {
     margin-bottom: 20px;
 }
 
-label{
+label {
     clear: both;
 }
