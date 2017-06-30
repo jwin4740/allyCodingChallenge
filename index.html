@@ -4,24 +4,22 @@
 <head>
     <meta charset="utf-8">
 
+    <!--for internet explorer compatibility-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
 
     <title>A. HAMILTON BANK</title>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <link href="assets/css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
     <div class='container'>
-        <dialog class="modal">
-
+        <div id='myModal' class="modal" style='display: none'>
             <img id='closeModal' src='assets/images/times.png'>
-
             <form style='width: 95%' action="" method="POST" role="form">
                 <legend>
                     <h2>Sign In To Your Account</h2>
                 </legend>
-
                 <div class="form-group">
                     <label for="">Username</label>
                     <input type="text" class="formInput" id="" placeholder="username">
@@ -32,7 +30,7 @@
                 </div>
                 <button id='submitLogin' type="submit" class="btn btn-primary">Login</button>
             </form>
-        </dialog>
+        </div>
         <nav>
             <div class='leftNav'>
                 <img class='favicon navChildren' src="assets/images/favicon.ico">
@@ -56,9 +54,7 @@
                     <a id='contact' class='aTopNav' href="#">contact</a>
                 </li>
             </ul>
-
         </nav>
-
         <main id='mainSection'>
             <section>
                 <div class='mainLeft'>
@@ -139,15 +135,12 @@
                             <p>Tokyo is the capital of Japan.</p>
                         </div>
                     </div>
-
-
                 </div>
             </section>
             <section>
                 <div class='mainLeft'>
                     <h2> Rates | <span style='color: #494949'> Check them out. </span> </h2>
                     <div id='rateTable'>
-
                         <table>
                             <thead>
                                 <tr>
@@ -166,17 +159,13 @@
                             <tbody>
                             </tbody>
                         </table>
-
                     </div>
-
                 </div>
             </section>
         </main>
-
         <footer>
             <div>
                 &copy; 2017 A. HAMILTON BANK
-
                 <ul style='float: right; margin: 0px;'>
                     <li class="lineList">
                         <a class='aBottomNav' href="#">home</a>
@@ -197,9 +186,7 @@
             </div>
         </footer>
     </div>
-
     <script src='assets/js/app.js'>
     </script>
 </body>
-
 </html>

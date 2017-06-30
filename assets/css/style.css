@@ -20,8 +20,38 @@ body {
     position: fixed;
     z-index: 9999;
     top: 15%;
+    margin-left: 35vw;
     border: solid 1px black;
+    padding: 10px;
     box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+}
+
+#closeModal {
+    float: right;
+    cursor: pointer;
+}
+
+#submitLogin {
+    background-color: purple;
+    color: white;
+    float: right;
+    border: none;
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+}
+
+input {
+    float: right;
+    width: 80%;
+}
+
+div.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    clear: both;
 }
 
 .container {
@@ -254,30 +284,39 @@ footer {
     padding: 0px 155px 20px 155px;
 }
 
-#closeModal {
-    float: right;
-    cursor: pointer;
+
+/*responsive design*/
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+    div.containMobile {
+        width: 50%;
+    }
+    .mainLeft {
+        width: 100%;
+    }
+    #mainRight {
+        width: 50%;
+    }
+    .modal{
+      
+        margin-left: 10vw;
+    }
 }
 
-#submitLogin {
-    background-color: purple;
-    color: white;
-    float: right;
-    border: none;
-    padding: 5px;
-    width: 100px;
-    cursor: pointer;
-}
-
-input {
-    float: right;
-    width: 80%;
-}
-
-div.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    clear: both;
+@media only screen and (max-width: 960px) {
+    /* tablets  */
+    div.containMobile {
+        width: 50%;
+    }
+    .mainLeft {
+        width: 100%;
+    }
+    #mainRight {
+        margin-left: 20%;
+        width: 50%;
+    }
+    .modal{
+        margin-left: 20vw;
+    }
 }

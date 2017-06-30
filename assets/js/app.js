@@ -25,7 +25,7 @@ var jsonData = [{
 ];
 var dataLength = jsonData.length;
 
-// sorts data by apy
+// function that takes a property from the json data as a parameter
 function sortData(prop) {
     return function (a, b) {
         if (a[prop] < b[prop]) {
@@ -36,9 +36,10 @@ function sortData(prop) {
         return 0;
     }
 }
-
+// sorts data by annual percentage yield
 jsonData.sort(sortData("apy"));
 
+// loops through the json data and dynamically adds rows to the table
 for (var i = 0; i < dataLength; i++) {
     var novoRow = $("<tr class='tRow'>");
     var novoColumnBank = $("<td class='bankName'>");
@@ -48,18 +49,15 @@ for (var i = 0; i < dataLength; i++) {
     var novoColumnEarnings = $("<td class='earnings'>");
     novoColumnEarnings.text("$" + (jsonData[i]["earnings"]).toFixed(2));
     novoRow.append(novoColumnBank).append(novoColumnapy).append(novoColumnEarnings);
-
     $("tbody").append(novoRow);
 }
 
 
-
+// function "toggles" the right dual tab pane
 $(".tabButton").on("click", function () {
     var clickedButton = this.id;
-
     if (clickedButton === "newsButton") {
         console.log("news");
-
         $("#newsButton").removeClass("passiveTab");
         $("#newsButton").addClass("activeTab");
         $("#archiveButton").addClass("passiveTab");
@@ -84,23 +82,20 @@ $(".tabButton").on("click", function () {
 });
 
 
+// start modal operation logic
 
-
-
-
-
-var dialog = document.querySelector('dialog');
+var dialog = $("#myModal");
 $("#clickMe").on("click", function () {
-    dialog.show();
+    dialog.css("display", "block");
 });
 
 $("#submitLogin").on("click", function () {
-    event.preventDefault();
-    dialog.close();
-
+    event.preventDefault(); // prevents submission of the form and refresh of the page
+    dialog.css("display", "none");
 });
 
 $("#closeModal").on("click", function () {
-    dialog.close();
+    dialog.css("display", "none");
 });
 
+// end modal operation logic
